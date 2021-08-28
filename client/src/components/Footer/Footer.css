@@ -2,22 +2,56 @@
     background-color: rgb(156, 156, 156);
     line-height: 24px;
     color: white;
+    /* position:absolute;  */
+    bottom:0;
+    width: 100vw;
     }
     
+    .mainDivFooter .art  .notice{
+        font-size: 30px;
+ 
+    }
+
+    .mainDivFooter .art  header{
+    font-size: 30px;
+
+}
+
     .mainDivFooter .art{
-        background-color: rgb(66, 66, 66);
+        background-color: #2e4a66;
         padding-top:  48px;
         padding: 16px;
-        clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 10%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
     
     .linksDiv a{
+        font-size: 30px;
+       padding: 10px;
         text-decoration: none;
         color: white;
     }
     .linksDiv{
-        text-align: center;
     
+        text-align: center;
+    }
+    @media only screen and (max-width: 855px) {
+        .mainDivFooter .art{
+            padding: 10px;
+        }
+        .linksDiv a{
+            padding: 10px;
+           font-size: 20px;
+        }
+        .mainDivFooter .art  .notice{
+            font-size: 15px;
+     
+        }
+    
+        .mainDivFooter .art  header{
+        font-size: 15px;
+    
+    }
+    }
