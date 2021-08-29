@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './components/Home/Home';
 import ChooseService from './components/pages/chooseService/ChooseService';
-
-    const ToriRouter = () => {
+import DatePicker from './components/pages/DatePage/DatePicker'
+    const MainRouter = () => {
     return (
         <div>
         <Router>
@@ -11,6 +11,7 @@ import ChooseService from './components/pages/chooseService/ChooseService';
                 <Switch>
                     <Route exact path="/"><Home /></Route>
                     <Route  path="/chooseService"><ChooseService /></Route>
+                    <Route  path="/DatePicker"><DatePicker /></Route>
                     
                 </Switch>
             </div>
@@ -19,4 +20,4 @@ import ChooseService from './components/pages/chooseService/ChooseService';
     )
 }
 
-export default ToriRouter;
+export default MainRouter;

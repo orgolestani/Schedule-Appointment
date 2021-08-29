@@ -25,27 +25,8 @@ const ChooseService = () => {
 
         <div className="main__cards">
           
-       <div></div>  
-          <div className="card">
-            <i className="fa fa-repeat fa-2x " aria-hidden="true"></i>
-            <div className="card_inner">
-              {/* <p className="text-primary-p">fUSD in circulating </p> */}
-              <span className="font-bold text-title">Click here for order</span>
-            </div>
-          </div>
-      <div></div>
-
-          {/* <div className="card">
-            <i
-              className="fa fa-shield fa-2x "
-              aria-hidden="true"
-            ></i>
-            <div className="card_inner">
-              <p className="text-primary-p">fUSD backed in pegswap </p>
-              <span className="font-bold text-title">47,606.42</span>
-            </div>
-          </div> */}
-
+   
+  
         </div>
 
         <div className="charts">
@@ -54,39 +35,38 @@ const ChooseService = () => {
             
             <div className="charts__right__title">
               <div>
-                <h1>Business details</h1>
+                <h1>Choose a service!</h1>
               </div>
-              {/* <i className="fa fa-bar-chart" aria-hidden="true"></i> */}
             </div>
 
             <div className="charts__right__cards">
-              <div className="detailsCards">
-                <h1>Address</h1>
-                <p>icon</p>
+            <div className="detailsCards" onClick={()=>{alert('hello')}}>
+                <h1>Service 1 </h1>
+                <p>50$</p>
               </div>
 
-              <div className="detailsCards">
-                <h1>Whatsapp</h1>
-                <p>icon</p>
+              <div className="detailsCards" onClick={()=>{alert('hello')}}>
+              <h1>Service 2 </h1>
+                <p>50$</p>
               </div>
 
-              <div className="detailsCards">
-                <h1>Call us </h1>
-                <p>icon</p>
+              <div className="detailsCards" onClick={()=>{alert('hello')}}>
+              <h1>Service 3 </h1>
+                <p>50$</p>
               </div>
 
-              <div className="detailsCards">
-                <h1>Instagram</h1>
-                <p>icon</p>
+              <div className="detailsCards" onClick={()=>{alert('hello')}}>
+              <h1>Service 4 </h1>
+                <p>50$</p>
               </div>
 
-              <div className="detailsCards">
-                <h1>Facebook</h1>
-                <p>icon</p>
+              <div className="detailsCards" onClick={()=>{alert('hello')}}>
+              <h1>Service 5 </h1>
+                <p>50$</p>
               </div>
-              <div className="detailsCards">
-                <h1>About us</h1>
-                <p>icon</p>
+              <div className="detailsCards" onClick={()=>{alert('hello')}}>
+              <h1>Service 6 </h1>
+                <p>50$</p>
               </div>
 
 
