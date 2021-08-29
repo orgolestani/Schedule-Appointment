@@ -2,8 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './components/Home/Home';
 import ChooseService from './components/pages/chooseService/ChooseService';
+import DateTimePicker from
 
-    const ToriRouter = () => {
+    const MainRouter = () => {
     return (
         <div>
         <Router>
@@ -19,4 +20,4 @@ import ChooseService from './components/pages/chooseService/ChooseService';
     )
 }
 
-export default ToriRouter;
+export default MainRouter;

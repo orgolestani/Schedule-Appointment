@@ -1,6 +1,5 @@
 import "./Home.css";
 import ImageSlide from '../ImageSlide/ImageSlide';
-import { Link } from "react-router-dom";
 
 // import ImageSlider from '../carousel/ImageSlider';
 // import {SliderData} from '../carousel/SliderData';

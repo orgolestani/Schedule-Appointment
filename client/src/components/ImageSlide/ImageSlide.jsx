@@ -1,6 +1,6 @@
 import React from 'react';
-import { Fade } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+import { Fade } from 'react-slideshow-image/dist/react-slideshow-image.min';
+import 'react-slideshow-image/dist/styles.css';
 
 import Photo1 from '../../assets/img_nature_wide.jpg'
 import Photo2 from '../../assets/img_snow_wide.jpg'
