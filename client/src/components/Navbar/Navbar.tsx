@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import logo from "./images/logo.png";
 import { TextareaAutosize } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -26,18 +27,14 @@ const useStyles = makeStyles((theme: Theme) =>
     }
   })
 );
-const logo = 'https://cdn.logo.com/hotlink-ok/logo-social.png'
-export default function ButtonAppBar() {
+
+export default function Navbar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <img src={logo} alt="Kitty Katty!" className={classes.logo} />
-          <Typography variant="h6" className={classes.title}>
-           Buisness name
-          </Typography>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -46,7 +43,11 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
+          <Typography variant="h6" className={classes.title}>
+            Kitty Katty!
+          </Typography>
 
+          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
