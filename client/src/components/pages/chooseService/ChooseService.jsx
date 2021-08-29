@@ -1,7 +1,7 @@
-import "./Home.css";
-import ImageSlide from '../ImageSlide/ImageSlide'
+import "./ChooseService.css";
+import ImageSlide from '../../ImageSlide/ImageSlide';
 
-const Home = () => {
+const ChooseService = () => {
  
   
   return (
@@ -30,7 +30,7 @@ const Home = () => {
             <i className="fa fa-repeat fa-2x " aria-hidden="true"></i>
             <div className="card_inner">
               {/* <p className="text-primary-p">fUSD in circulating </p> */}
-              <span className="font-bold text-title" >Click here for order</span>
+              <span className="font-bold text-title">Click here for order</span>
             </div>
           </div>
       <div></div>
@@ -101,4 +101,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ChooseService;
