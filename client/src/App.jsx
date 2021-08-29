@@ -1,14 +1,15 @@
-import Navbar from "./components/Navbar/Navbar";
+import Navbarr from "./components/Navbar/Navbarr";
 import Footer from "./components/Footer/Footer";
-import Home from './components/Home/Home';
-// import ToriRouter from './ToriRouter';
+// import Home from './components/Home/Home';
+import ToriRouter from './MainRouter';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <Navbar/>
-    <Home/>
+<Navbarr/>
+
+    <ToriRouter/>
     <Footer/>
     </div>
   );

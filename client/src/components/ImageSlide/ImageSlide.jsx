@@ -21,6 +21,7 @@ const ImageSlide = () => {
           <div className="image-container">
             <img src={fadeImages[0]} style={{width:'450px', height:'455px'}}/>
           </div>
+
           {/* <h2>First Slide</h2> */}
         </div>
         <div className="each-fade">
