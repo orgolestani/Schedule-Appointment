@@ -1,5 +1,9 @@
 import "./Home.css";
-import ImageSlide from '../ImageSlide/ImageSlide'
+import ImageSlide from '../ImageSlide/ImageSlide';
+import { Link } from "react-router-dom";
+
+// import ImageSlider from '../carousel/ImageSlider';
+// import {SliderData} from '../carousel/SliderData';
 
 const Home = () => {
  
@@ -19,18 +23,19 @@ const Home = () => {
 
           <div className="imageSlideMain">
            <div></div>
-           <div className='imageSlide'><ImageSlide/></div>
+           <div className='imageSlide'><ImageSlide /></div>
            <div></div>
           </div>
 
         <div className="main__cards">
           
        <div></div>  
-          <div className="card">
+          <div className="card" href="">
+            
             <i className="fa fa-repeat fa-2x " aria-hidden="true"></i>
             <div className="card_inner">
               {/* <p className="text-primary-p">fUSD in circulating </p> */}
-              <span className="font-bold text-title" >Click here for order</span>
+              <span>Click here for order</span>
             </div>
           </div>
       <div></div>

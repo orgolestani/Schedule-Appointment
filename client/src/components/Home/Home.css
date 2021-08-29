@@ -47,7 +47,8 @@ main {
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     height: 70px;
     padding: 25px;
     border-radius: 5px;
@@ -63,6 +64,7 @@ main {
   
   .card_inner > span {
     font-size: 25px;
+
   }
   
   .charts {
@@ -176,7 +178,7 @@ main {
     }
 
     .charts__right{
-      width: 320px;
+      width: 330px;
     }
 
     .detailsCards{
