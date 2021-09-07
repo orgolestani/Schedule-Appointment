@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from './components/Home/Home';
+import Home from './components/pages/Home/Home';
 import ChooseService from './components/pages/chooseService/ChooseService';
 import DatePicker from './components/pages/DatePage/DatePicker'
     const MainRouter = () => {

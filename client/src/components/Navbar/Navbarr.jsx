@@ -1,27 +1,19 @@
-import "./Navbar.css";
-import avatar from "../../assets/avatar.png";
-
+import { AppBar, Typography } from '@material-ui/core';
+import useStyles from './styles';
+import compLogo from '../../images/AS logo.png'
 import React from 'react'
 
-function Navbar({sidebarOpen, openSidebar}) {
-    return (
-        <nav className="navbar">
-        <div className="nav_icon" onClick={() => openSidebar()}>
-            <i className="fa fa-bars"></i>
-        </div>
-        <div className="navbar__left">
-            <a href="https://www.figma.com/file/mKzoI91JtjUTMFsl1MKWe2/HomePage?node-id=4%3A25">1</a>
-            <a >2</a>
-            <a className="active_link" >3</a>
-        </div>
+function Navbar() {
+    const classes = useStyles();
 
-        <div className="navbar__right">
-           
-            <a>
-                <img width="30" src={avatar} alt="avatar"/>
-            </a>
-        </div>
-        </nav>
+
+    return (
+<AppBar className={classes.appBar} position= "static" color="inherit">
+<div className={classes.brandContainer}>
+                <Typography key="navbarTypography"  to="/" className={classes.heading} variant="h2" align="center" >business name</Typography>
+                <img className={classes.image} src={compLogo} alt="business-logo" height="60"/>
+            </div>
+</AppBar>
     )
 }
 export default Navbar;
