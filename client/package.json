@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.0.0-rc.0",
     "@syncfusion/ej2-react-calendars": "^19.2.55",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -12,7 +16,9 @@
     "react-datepicker": "^4.2.1",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
+    "react-slideshow-image": "^3.5.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
