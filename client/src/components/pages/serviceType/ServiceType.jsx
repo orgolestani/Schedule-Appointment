@@ -3,13 +3,17 @@ import ImageSlide from '../../ImageSlide/ImageSlide'
 import { Paper, Grid, Typography } from '@material-ui/core';
 import { Call, LocationOn, Facebook, WhatsApp, Instagram, Info } from '@mui/icons-material';
 
-import { Link } from 'react-router-dom'; 
+import { Link, useHistory,useLocation } from 'react-router-dom'; 
+import { useState } from 'react';
 
-const Home = () => {
+const ServiceType = () => {
+const location = useLocation()
 const classes = useStyles();
-
+const [serviceName, setServiceName] = useState(location.state.service)
+console.log(location.state.service)
   return (
     <div className={classes.root}>
+      <h1>THIS IS THE SERVICE YOU CHOSE:  {serviceName}</h1>
   <Grid container className={classes.mainGridContainer} direction="column">
 
 {/* ImageSlide component */}
@@ -43,7 +47,7 @@ const classes = useStyles();
 
 {/* call us button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-  <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -62,7 +66,7 @@ const classes = useStyles();
 
 {/* Address button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-  <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -81,7 +85,7 @@ const classes = useStyles();
 
 {/* About us button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-  <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -100,7 +104,7 @@ const classes = useStyles();
 
 {/* WhatsApp button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-  <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -119,7 +123,7 @@ const classes = useStyles();
 
 {/* Instagram button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-  <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -138,7 +142,7 @@ const classes = useStyles();
 
 {/* Facebook button */}
   <Grid container item xs={4} className={classes.contactButtonsMain} >
-    <Link className={classes.Link} to='./'>
+    <Link className={classes.Link}>
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
 
@@ -165,4 +169,4 @@ const classes = useStyles();
 }
   
 
-export default Home;
+export default ServiceType;

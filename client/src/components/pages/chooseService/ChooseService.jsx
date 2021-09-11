@@ -1,28 +1,37 @@
 import useStyles from './styles';
 import ImageSlide from '../../ImageSlide/ImageSlide';
-import { Paper, Grid, Typography } from '@material-ui/core';
+import { Paper, Grid, Typography, Button } from '@material-ui/core';
 
-import { Link } from 'react-router-dom'; 
 
+import { Link, useHistory } from 'react-router-dom'; 
 
 
 
 const ChooseService = () => {
+  const history = useHistory()
   const classes = useStyles();
-  const services = ['service: 120₪', 'service: 80₪', 'service: 200₪', 'service: 160₪', 'service: 50₪', 'service: 30₪', 'service: 160₪', 'service: 50₪', 'service: 30₪'];
+  const clickHandler = (serviceName)=>{history.push({
+    pathname: `/ServiceType/:${serviceName}`,
+    state: { service: serviceName }
+  }
+  )}
+
+  const services = ['fellatio: 120₪', 'Gwak-Gwak 2000: 80₪', 'Angry dragon: 200₪', 'Full-Body: 160₪', 'Ball-Tickle: 50₪', 'service: 30₪', 'service: 160₪', 'service: 50₪', 'service: 30₪'];
   const serviceList = [];
-  services.forEach((service, index) => {serviceList.push(  <Grid container item xs={4} className={classes.contactButtonsMain} >
-    <Link className={classes.Link} to="/DatePicker">
+  services.forEach((service, index) => {serviceList.push(  
+  <Grid container item xs={4} className={classes.contactButtonsMain} >
+<Button variant="outlined" color="primary" onClick={()=>{clickHandler(service)}}>
+  
       <Paper className={classes.paper1}>
         <Grid container className={classes.contactIconAndTextGrid} >
   
-          <Grid item xs >
+          <Grid item s >
   <Typography className={classes.typography}>{index+1}. {service}</Typography>
           </Grid>
         
         </Grid>
       </Paper>
-    </Link>
+</Button>
   </Grid>)}) 
   
   return (
@@ -31,7 +40,7 @@ const ChooseService = () => {
 
 {/* ImageSlide component */}
 <Grid item xs={12} >
-<Paper className={classes.paper}>
+<Paper className={classes.paper} >
 <Grid container wrap="nowrap" >
  
   <Grid item xs zeroMinWidth>
@@ -54,5 +63,4 @@ const ChooseService = () => {
   </div>
   );
 };
-
 export default ChooseService;
