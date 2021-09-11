@@ -1,4 +1,4 @@
-const userCtrl = require("../controllers/User-ctrl");
+const userCtrl = require("../controllers/user-ctrl");
 const userRouter = require("express").Router();
 
 // acces to database model for old functions
