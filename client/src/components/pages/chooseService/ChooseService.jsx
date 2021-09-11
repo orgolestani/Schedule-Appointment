@@ -1,83 +1,57 @@
-import "./ChooseService.css";
+import useStyles from './styles';
 import ImageSlide from '../../ImageSlide/ImageSlide';
+import { Paper, Grid, Typography } from '@material-ui/core';
+
+import { Link } from 'react-router-dom'; 
+
+
+
 
 const ChooseService = () => {
- 
+  const classes = useStyles();
+  const services = ['service: 120₪', 'service: 80₪', 'service: 200₪', 'service: 160₪', 'service: 50₪', 'service: 30₪', 'service: 160₪', 'service: 50₪', 'service: 30₪'];
+  const serviceList = [];
+  services.forEach((service, index) => {serviceList.push(  <Grid container item xs={4} className={classes.contactButtonsMain} >
+    <Link className={classes.Link} to="/DatePicker">
+      <Paper className={classes.paper1}>
+        <Grid container className={classes.contactIconAndTextGrid} >
+  
+          <Grid item xs >
+  <Typography className={classes.typography}>{index+1}. {service}</Typography>
+          </Grid>
+        
+        </Grid>
+      </Paper>
+    </Link>
+  </Grid>)}) 
   
   return (
-    <main>
-      <div className="main__container">
+    <div className={classes.root}>
+    <Grid container className={classes.mainGridContainer} direction="column">
 
-        <div className="main__title">
+{/* ImageSlide component */}
+<Grid item xs={12} >
+<Paper className={classes.paper}>
+<Grid container wrap="nowrap" >
+ 
+  <Grid item xs zeroMinWidth>
+    <ImageSlide/>
+  </Grid>
+</Grid>
+</Paper>
+</Grid>
 
-          <div className="main__greeting">
-            
-            <h1>Hello Dear User</h1>
-            <p>Welcome to our business</p>
-          </div>
-        </div>
+<Typography noWrap className={classes.typography}>Choose a service</Typography>
 
-          <div className="imageSlideMain">
-           <div></div>
-           <div className='imageSlide'><ImageSlide/></div>
-           <div></div>
-          </div>
+{/* Services buttons */}
+<Paper className={classes.contact}>
+<Grid container spacing={3}>
+{serviceList}
+</Grid>
+</Paper>
 
-        <div className="main__cards">
-          
-   
-  
-        </div>
-
-        <div className="charts">
-<div></div>
-          <div className="charts__right">
-            
-            <div className="charts__right__title">
-              <div>
-                <h1>Choose a service!</h1>
-              </div>
-            </div>
-
-            <div className="charts__right__cards">
-            <div className="detailsCards" onClick={()=>{alert('hello')}}>
-                <h1>Service 1 </h1>
-                <p>50$</p>
-              </div>
-
-              <div className="detailsCards" onClick={()=>{alert('hello')}}>
-              <h1>Service 2 </h1>
-                <p>50$</p>
-              </div>
-
-              <div className="detailsCards" onClick={()=>{alert('hello')}}>
-              <h1>Service 3 </h1>
-                <p>50$</p>
-              </div>
-
-              <div className="detailsCards" onClick={()=>{alert('hello')}}>
-              <h1>Service 4 </h1>
-                <p>50$</p>
-              </div>
-
-              <div className="detailsCards" onClick={()=>{alert('hello')}}>
-              <h1>Service 5 </h1>
-                <p>50$</p>
-              </div>
-              <div className="detailsCards" onClick={()=>{alert('hello')}}>
-              <h1>Service 6 </h1>
-                <p>50$</p>
-              </div>
-
-
-            </div>
-           
-          </div>
-  <div></div>
-        </div>
-        {/* <!-- CHARTS ENDS HERE --> */}
-      </div>
-    </main>
+    </Grid>
+  </div>
   );
 };
 
