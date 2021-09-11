@@ -1,6 +1,6 @@
 import useStyles from './styles';
 import ImageSlide from '../../ImageSlide/ImageSlide'
-import { Paper, Grid, Typography, Avatar  } from '@material-ui/core';
+import { Paper, Grid, Typography } from '@material-ui/core';
 import { Call, LocationOn, Facebook, WhatsApp, Instagram, Info } from '@mui/icons-material';
 
 import { Link } from 'react-router-dom'; 
