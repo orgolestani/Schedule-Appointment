@@ -1,4 +1,4 @@
-const PORT =8080
+const PORT =8080;
 // General imports
 const bodyParser = require("body-parser");
 const cors = require("cors");

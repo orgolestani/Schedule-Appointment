@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './components/pages/Home/Home';
 import ServiceType from './components/pages/serviceType/ServiceType';
 import ChooseService from './components/pages/chooseService/ChooseService';
-import DatePicker from './components/pages/DatePage/DatePicker'
+import DatePicker from './components/pages/DatePage/DateAndTime'
     const MainRouter = () => {
     return (
         <div>
